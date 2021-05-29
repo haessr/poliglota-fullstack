@@ -1,7 +1,13 @@
 # Challenge Full Stack
 
-Ejecutar el script:
+## Instrucciones
 
+Clonar repositorio
+```bash
+git clone git@github.com:haessr/poliglota-fullstack.git
+```
+
+Ejecutar el script (ruby 3.0.1):
 ```bash
 ruby challenge.rb
 ```
