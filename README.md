@@ -32,7 +32,7 @@ intersection_union([7, 8, 9], [1,2,3]) # => [[], [1, 2, 3, 7, 8, 9]]
 ## Enunciado 2
 
 Escriba una función que busque en una matriz de nombres (sin clasificar) el nombre "Bob" y devuelva la
-ubicación en la matriz. Si Bob no está en la matriz, devuelve -1.
+ubicación en la matriz. **Si Bob no está en la matriz, devuelve -1**.
 
 Ejemplos:
 
@@ -45,11 +45,13 @@ find_bob(["Jimmy", "Layla", "James"]) # => -1
 ## Enunciado 3
 
 Cree una función que tome una matriz de números y devuelva el número que es único junto a su ubicación en
-la matriz, en caso de no existir retornar una matriz vacía.
+la matriz, **en caso de no existir retornar una matriz vacía**.
 
 Ejemplos:
 ```ruby
 unique([3, 3, 1, 3, 3, 3]) # => [1,2]
 unique([0, 0, 0, 0.93, 0]) # => [0.93,3]
 unique([1, 1, 1, 1, 1, 0, 1, 1]) # => [0,5]
+# Sin elementos únicos
+p unique([3, 4, 5, 4, 3, 3, 5, 4, 4, 3]) # =>[]
 ```
