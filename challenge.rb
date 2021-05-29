@@ -33,13 +33,6 @@ def intersection_union(arr1, arr2)
   [intersection(arr1, arr2), union(arr1, arr2)]
 end
 
-# OUTPUTS
-
-puts 'intersection_union outputs:'
-p intersection_union([4, 4, 6, 7, 8], [4, 5, 9]) # => [[4], [4, 5, 6, 7, 8, 9]]
-p intersection_union([7, 8, 9], [1, 2, 3]) # => [[], [1, 2, 3, 7, 8, 9]]
-puts ''
-
 #################################
 #################################
 # FIND_BOB SOLUTION
@@ -60,14 +53,6 @@ end
 def find_bob(names)
   find(names, 'Bob')
 end
-
-# OUTPUTS
-
-puts 'find_bob outputs:'
-p find_bob(%w[Jimmy Layla Bob]) # => 2
-p find_bob(%w[Bob Layla Kaitlyn Patricia]) # => 0
-p find_bob(%w[Jimmy Layla James]) # => -1
-puts ''
 
 #################################
 #################################
@@ -116,7 +101,22 @@ def unique(array)
   end
 end
 
+#################################
+#################################
 # OUTPUTS
+#################################
+#################################
+
+puts 'intersection_union outputs:'
+p intersection_union([4, 4, 6, 7, 8], [4, 5, 9]) # => [[4], [4, 5, 6, 7, 8, 9]]
+p intersection_union([7, 8, 9], [1, 2, 3]) # => [[], [1, 2, 3, 7, 8, 9]]
+puts ''
+
+puts 'find_bob outputs:'
+p find_bob(%w[Jimmy Layla Bob]) # => 2
+p find_bob(%w[Bob Layla Kaitlyn Patricia]) # => 0
+p find_bob(%w[Jimmy Layla James]) # => -1
+puts ''
 
 puts 'unique outputs:'
 p unique([3, 3, 1, 3, 3, 3]) # => [1, 2]
